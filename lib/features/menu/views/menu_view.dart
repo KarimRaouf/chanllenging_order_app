@@ -23,7 +23,7 @@ class _MenuViewState extends State<MenuView> {
   final SupabaseClient supabase = Supabase.instance.client;
 
   Future<List<Map<String, dynamic>>> fetchMenu() async {
-    final response = await supabase.from('menu').select();
+    final response = await supabase.from('orders').select();
     return response as List<Map<String, dynamic>>;
   }
 
@@ -36,7 +36,7 @@ class _MenuViewState extends State<MenuView> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              AppStrings.menu,
+              'Orders',
               style: AppTextStyles.font24BlackBold,
             ),
             verticalSpace(16),

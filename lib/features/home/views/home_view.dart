@@ -6,6 +6,7 @@ import '../../../core/app_strings/app_strings.dart';
 import '../../../core/helper/spacing.dart';
 import '../../../core/theming/styles.dart';
 import '../../../core/widgets/dish_item_box.dart';
+import '../../../generated/assets.dart';
 
 
 class HomeView extends StatelessWidget {
@@ -26,6 +27,7 @@ class HomeView extends StatelessWidget {
               style: AppTextStyles.font24BlackBold,
             ),
             verticalSpace(16),
+            Image.asset(Assets.imagesEmptyList),
             // DishItemBox(index: 0,)
           ],
         ),

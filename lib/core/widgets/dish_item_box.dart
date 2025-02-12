@@ -45,9 +45,9 @@ class DishItemBox extends StatelessWidget {
           ),
           child: DishItem(
             isMenu: isMenu,
-            imageUrl: menuItems[index]['image_url'],
             itemName: menuItems[index]['item_name'],
             itemPrice: menuItems[index]['price'],
+
           ),
         ),
       ],
@@ -59,14 +59,12 @@ class DishItem extends StatefulWidget {
   const DishItem({
     super.key,
     required this.isMenu,
-    required this.imageUrl,
     required this.itemName,
     this.itemPrice,
   });
 
   final bool isMenu;
 
-  final String imageUrl;
   final String itemName;
   final dynamic itemPrice;
 
@@ -114,12 +112,12 @@ class _DishItemState extends State<DishItem> {
         children: [
           Row(
             children: [
-              Image.network(
-                widget.imageUrl,
-                height: 75.h,
-                width: 75.w,
-              ),
-              horizontalSpace(16),
+              // Image.network(
+              //   widget.imageUrl,
+              //   height: 75.h,
+              //   width: 75.w,
+              // ),
+              // horizontalSpace(16),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

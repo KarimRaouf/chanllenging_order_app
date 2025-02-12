@@ -5,6 +5,7 @@ class Assets {
   static const String fontsNunitoVariableFontWght = 'assets/fonts/Nunito-VariableFont_wght.ttf';
   static const String imagesCoffeeCup = 'assets/images/coffee-cup.png';
   static const String imagesCoffeeOrder = 'assets/images/coffee_order.jpg';
+  static const String imagesEmptyList = 'assets/images/empty_list.jpg';
   static const String imagesOnboardingDoctor = 'assets/images/onboarding_doctor.png';
   static const String imagesSplash = 'assets/images/splash.png';
   static const String svgsDocBackground = 'assets/svgs/doc_background.svg';

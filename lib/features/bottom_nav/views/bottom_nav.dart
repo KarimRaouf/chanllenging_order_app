@@ -116,7 +116,7 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
           ),
           FlashyTabBarItem(
             icon: Icon(Icons.restaurant_menu),
-            title: Text('Menu'),
+            title: Text('Orders'),
           ),
           FlashyTabBarItem(
             icon: Icon(Icons.wallet),
