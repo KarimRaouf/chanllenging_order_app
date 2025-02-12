@@ -5,9 +5,14 @@ import 'app_colors.dart';
 import 'font_weight_helper.dart';
 
 class AppTextStyles {
-  static TextStyle font24Black700Weight = TextStyle(
+  static TextStyle font60BlackBold = TextStyle(
+    fontSize: 60.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: Colors.black,
+  );
+  static TextStyle font24BlackBold = TextStyle(
     fontSize: 24.sp,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeightHelper.bold,
     color: Colors.black,
   );
 
@@ -18,14 +23,28 @@ class AppTextStyles {
   );
   static TextStyle font24BlueBold = TextStyle(
     fontSize: 24.sp,
-    fontWeight: FontWeightHelper.bold,
-    color: AppColors.mainBlue,
+    fontWeight: FontWeightHelper.regular,
+    color: Colors.black,
   );
   static TextStyle font14GreyRegular = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
     color: AppColors.grey,
-  );static TextStyle font14LightGreyRegular = TextStyle(
+  );
+  static TextStyle font14BlackRegular = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: Colors.black,
+    fontFamily: 'Nunito',
+  );
+
+  static TextStyle font14BlackBold = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: Colors.black,
+    fontFamily: 'Nunito',
+  );
+  static TextStyle font14LightGreyRegular = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
     color: AppColors.lightGrey,

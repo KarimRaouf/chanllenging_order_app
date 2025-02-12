@@ -22,6 +22,7 @@ class OrderApp extends StatelessWidget {
         theme: ThemeData(
           primaryColor: AppColors.mainBlue,
           scaffoldBackgroundColor: Colors.white,
+          fontFamily: 'Nunito'
         ),
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.bottomNavScreen,

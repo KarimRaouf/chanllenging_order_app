@@ -1,5 +1,6 @@
 import 'package:chanllenging_order_app/core/routing/routes.dart';
 import 'package:chanllenging_order_app/features/bottom_nav/views/bottom_nav.dart';
+import 'package:chanllenging_order_app/features/menu/views/menu_view.dart';
 import 'package:chanllenging_order_app/features/wallet/views/wallet_view.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const BottomNavBarView());
       case Routes.walletScreen:
         return MaterialPageRoute(builder: (_) => const WalletView());
+      case Routes.menuScreen:
+        return MaterialPageRoute(builder: (_) => const MenuView());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
