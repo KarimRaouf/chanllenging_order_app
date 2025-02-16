@@ -47,7 +47,6 @@ class DishItemBox extends StatelessWidget {
             isMenu: isMenu,
             itemName: menuItems[index]['item_name'],
             itemPrice: menuItems[index]['price'],
-
           ),
         ),
       ],
@@ -112,12 +111,6 @@ class _DishItemState extends State<DishItem> {
         children: [
           Row(
             children: [
-              // Image.network(
-              //   widget.imageUrl,
-              //   height: 75.h,
-              //   width: 75.w,
-              // ),
-              // horizontalSpace(16),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -170,30 +163,30 @@ class _DishItemState extends State<DishItem> {
             ],
           ),
 
-          Visibility(
-            visible: widget.isMenu,
-            child: InkWell(
-              onTap: () async {
-                await placeOrder();
-              },
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    AppStrings.orderNow,
-                    style: AppTextStyles.font14BlackBold,
-                    textAlign: TextAlign.center,
-                  ),
-                  horizontalSpace(4),
-                  Icon(
-                    Icons.double_arrow_sharp,
-                    color: AppColors.lightGrey,
-                    weight: 1.6,
-                  ),
-                ],
-              ),
-            ),
-          ),
+          // Visibility(
+          //   visible: widget.isMenu,
+          //   child: InkWell(
+          //     onTap: () async {
+          //       await placeOrder();
+          //     },
+          //     child: Row(
+          //       mainAxisSize: MainAxisSize.min,
+          //       children: [
+          //         Text(
+          //           AppStrings.orderNow,
+          //           style: AppTextStyles.font14BlackBold,
+          //           textAlign: TextAlign.center,
+          //         ),
+          //         horizontalSpace(4),
+          //         Icon(
+          //           Icons.double_arrow_sharp,
+          //           color: AppColors.lightGrey,
+          //           weight: 1.6,
+          //         ),
+          //       ],
+          //     ),
+          //   ),
+          // ),
 
           // verticalSpace(12),
         ],

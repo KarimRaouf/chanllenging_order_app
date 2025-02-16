@@ -8,7 +8,6 @@ import '../../../core/theming/styles.dart';
 import '../../../core/widgets/dish_item_box.dart';
 import '../../../generated/assets.dart';
 
-
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
@@ -22,10 +21,8 @@ class HomeView extends StatelessWidget {
           children: [
             CoffeeImageAndUserName(),
             verticalSpace(32),
-            Text(
-              AppStrings.currentOrders,
-              style: AppTextStyles.font24BlackBold,
-            ),
+            Text(AppStrings.currentOrders,
+                style: AppTextStyles.font24BlackBold),
             verticalSpace(16),
             Image.asset(Assets.imagesEmptyList),
             // DishItemBox(index: 0,)
@@ -35,4 +32,3 @@ class HomeView extends StatelessWidget {
     );
   }
 }
-

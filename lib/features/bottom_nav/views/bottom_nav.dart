@@ -1,7 +1,6 @@
 import 'package:chanllenging_order_app/core/app_strings/app_strings.dart';
 import 'package:chanllenging_order_app/core/theming/app_colors.dart';
 import 'package:chanllenging_order_app/core/widgets/app_text_form_field.dart';
-import 'package:chanllenging_order_app/features/Home/views/home_view.dart';
 import 'package:chanllenging_order_app/features/menu/views/menu_view.dart';
 import 'package:chanllenging_order_app/features/wallet/views/wallet_view.dart';
 import 'package:flashy_tab_bar2/flashy_tab_bar2.dart';
@@ -10,6 +9,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:giffy_dialog/giffy_dialog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import '../../home/views/home_view.dart';
 
 class BottomNavBarView extends StatefulWidget {
   const BottomNavBarView({super.key});
