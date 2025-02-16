@@ -4,7 +4,8 @@ import 'package:chanllenging_order_app/features/menu/views/menu_view.dart';
 import 'package:chanllenging_order_app/features/wallet/views/wallet_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../features/Home/views/home_view.dart';
+import '../../features/home/views/home_view.dart';
+
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
